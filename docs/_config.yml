@@ -7,7 +7,7 @@ baseurl: "/modified-ebook-series"
 timezone: NZ
 
 # Build settings
-remote_theme: "paper-engineer/modified-ebook-series"
+remote_theme: paper-engineer/modified-ebook-series
 markdown: kramdown
 kramdown:
   input: GFM
