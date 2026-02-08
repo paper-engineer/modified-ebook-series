@@ -1,13 +1,13 @@
 # Site settings
-title: Jekyll GitBook Theme Demo Site
-email: adam@adamrehn.com
+title: Modified E-book Series
+email: 
 description: Demo site for the GitBook-inspired documentation theme for Jekyll
-url: "https://adamrehn.github.io"
-baseurl: "/jekyll-theme-gitbook-demo"
-timezone: Australia/Brisbane
+url: "https://paper-engineer.github.io"
+baseurl: "/modified-ebook-series"
+timezone: NZ
 
 # Build settings
-remote_theme: adamrehn/jekyll-theme-gitbook@v0.0.1
+remote_theme: "paper-engineer/modified-ebook-series"
 markdown: kramdown
 kramdown:
   input: GFM
