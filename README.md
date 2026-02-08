@@ -39,16 +39,19 @@ I also like the idea of drafts. basically this reads as "remake chapterbooks but
 note that the broken links from baseurl are going to stay broken until we reach that point in the code-mashing. that's just how it goes, I think. 
 
 todo
+- get this site's docs working
 - mess around with MM collections until it works, figure out how it works (okay, yeah, probably because collections are supposed to be top-level folders)
 - decide on functionality and file it all in docs - a disorganised one-collection-no-subfolder mess of documentation is fine for now
-- draw out required architecture
+- draw out required architecture and file it in docs as well
+- branch it so I have a stable working backup to read my specs off of
+- figure out my CI/CD pipeline
 - document tf out of all of it, seriously, comment the code to hell and back
-- figure out your CI/CD pipeline
 
 8/2/2026
 - forked
-- changed all the names
-- filled in the bits up there
+- changed all the theme names
+- filled in the readme
+- attempted to make a site that renders fully
 
 # notes
 
