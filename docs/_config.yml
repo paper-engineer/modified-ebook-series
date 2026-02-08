@@ -20,27 +20,29 @@ plugins: ["jekyll-remote-theme"]
 
 # Theme settings
 theme-settings:
-  
   # Copyright settings
   copyright:
     author: Adam Rehn
     license: "Licensed under the MIT License, see the file [LICENSE](https://github.com/adamrehn/jekyll-theme-gitbook-demo/blob/master/LICENSE) for details."
     year: 2020
-  
   # The collection that contains our chapters
-  collection: chapters
-  
+  # we're ripping this one out, so find-and-replace site.theme-settings.collection with page.collection
+  collection: v1
   # Enable generation of links for chapter index pages
-  indices: true
+  indices: true #but they have to be linked by chapter title, figure out how to do that
 
 # Configure the permalinks for each chapter
-collections_dir: _collections
+collections_dir: _books
 collections:
-  chapters:
+  v1:
+    output: true
+    permalink: /:path
+  v2:
     output: true
     permalink: /:path
 
 # Use front matter defaults to supply the metadata for each chapter
+# we're actually going to kill this bit..somehow
 defaults:
   -
     scope:
@@ -50,7 +52,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_collections/_chapters/first-chapter"
+      path: "_books/v1/first-chapter"
     values:
       chapter: "First Chapter"
       chapnum: 1
