@@ -52,19 +52,19 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_books/v1/first-chapter"
+      path: "_books/v1/c1"
     values:
       chapter: "First Chapter"
       chapnum: 1
   -
     scope:
-      path: "_collections/_chapters/second-chapter"
+      path: "_books/v1/c2"
     values:
       chapter: "Second Chapter"
       chapnum: 2
   -
     scope:
-      path: "_collections/_chapters/third-chapter"
+      path: "_books/v1/c3"
     values:
       chapter: "Third Chapter"
       chapnum: 3
