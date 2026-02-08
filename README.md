@@ -1,3 +1,49 @@
+# about
+
+I have a book series. it's easy to find themes for single books (all documentation themes work). it's absurdly hard to find themes that let you put up more than one book. and not all of themes have the right-pane kramdown TOC either, and those that do build a TOC then don't have the left-pane book nav, and those that have both don't have the prev/next page buttons, etc etc. and gitbooks is not free for custom domains. 
+
+we can do a separate AR site for each book on its own subdomain, plus a splash landing page, that's easy. but making all my books the same site is a hell of a lot of trouble. doing it via AR subsites isn't fucking clean when you have 30-odd chapters per book. and MM is going to be finicky and turn out less pretty than AR. 
+
+the only thing AR actually does non-replicably is auto-generating the leftpane, and I have code for that now, kind of. well, that and having the cleanest (defined code-wise) theme this side of nowhere. MM is too much finicky. 
+
+ooh, that is not non-replicable. jekyll-chapterbook does it. and there are prev/next buttons. I bet I can copy a rightpane-toc code forcing...but its code is a lot wordier, like, a lot a lot, and it doesn't allow for multiple books. code got shaved down too much. it's good for what it is, but what I want is multibook enabled. 
+
+so really we're just on AR because it's the cleanest blank canvas I have. (also it's prettier)
+
+# specs
+
+so the thing I probably want to do, when I have time, is...tidy up his code. I've already gotten a good 50% of the way into de-architecting it. gotta refactor. add support for multi-collections, say, in roughly the way MM does it - I bet how MM does it is available open source. and that'll be us, neat and tidy. 
+
+I bet I can port over some of the good stuff from MM. what's the good stuff? figure that out and put it in here. various _includes, I think. MM has too many moving parts to effectively modify. 
+
+considered that index.html per subfolder can have chapnum assigned in front matter- then you would have to make a setting in the config whether you're auto or manual numbering chapters. default to auto. decided against, because ugh manual. but index can still hold chapter metadata, I think. I think this is sorta reasonable? rather than pulling from folder name. yeah, let's make it work that way. and that way it can also hold a preface or whatever, if you want it. so we are keeping that toggle setting after all, go figure. 
+
+therefore: if there is an index and chapter name is defined in the index, go with that. otherwise, use the folder name. 
+
+o hey gitbook has that lil header with the tabs. I want that. 
+
+we're definitely grabbing slugs from chapterbook. similarly, the index pages should be linked from section titles, so that's chapterbook's script. use a dropdown for collapsing, or remove collapsing entirely, but that's really AR script. I think the scripting is going to end up as a horrible mishmash at best, considering how fucking wordy the chapterbook scripting is. keep front and back sections from chapterbooks. 
+
+I also like the idea of drafts. basically this reads as "remake chapterbooks but in AR, because hell if I'm going to find-and-replace every instance of chapter by page.collection" well hey that wouldn't be too bad would it
+
+# changelog
+
+todo
+- mess around with MM collections on a fresh site until it works, figure out how it works
+- decide on functionality and file it all in docs - a disorganised one-collection-no-subfolder mess of docs is fine for now
+- draw out required architecture
+- document tf out of all of it, seriously, comment the code to hell and back
+- figure out your CI/CD pipeline
+
+8/2/2026
+- forked
+
+# notes
+
+technically, split sites is more optimised for build time. nothing stopping you from making multiple sites. 
+
+---
+
 # GitBook-inspired documentation theme for Jekyll
 
 This is a documentation theme for [Jekyll](https://jekyllrb.com/) that takes its inspiration primarily from the visual design language of [GitBook](https://www.gitbook.com/), along with elements from the [Docker Documentation](https://docs.docker.com/) and tweaks to suit the personal preferences of the author. Note that this theme does not reuse any code from the sites from which it draws inspiration, and is written from first principles using [Bootstrap](https://getbootstrap.com/).
