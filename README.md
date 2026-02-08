@@ -29,14 +29,16 @@ I also like the idea of drafts. basically this reads as "remake chapterbooks but
 # changelog
 
 todo
-- mess around with MM collections on a fresh site until it works, figure out how it works
-- decide on functionality and file it all in docs - a disorganised one-collection-no-subfolder mess of docs is fine for now
+- mess around with MM collections until it works, figure out how it works (okay, yeah, probably because collections are supposed to be top-level folders)
+- decide on functionality and file it all in docs - a disorganised one-collection-no-subfolder mess of documentation is fine for now
 - draw out required architecture
 - document tf out of all of it, seriously, comment the code to hell and back
 - figure out your CI/CD pipeline
 
 8/2/2026
 - forked
+- changed all the names
+- filled in the bits up there
 
 # notes
 
