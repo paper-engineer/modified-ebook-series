@@ -28,6 +28,8 @@ I also like the idea of drafts. basically this reads as "remake chapterbooks but
 
 # changelog
 
+note that the broken links from baseurl are going to stay broken until we reach that point in the code-mashing. that's just how it goes, I think. 
+
 todo
 - mess around with MM collections until it works, figure out how it works (okay, yeah, probably because collections are supposed to be top-level folders)
 - decide on functionality and file it all in docs - a disorganised one-collection-no-subfolder mess of documentation is fine for now
