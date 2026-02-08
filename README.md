@@ -1,5 +1,13 @@
 # about
 
+[Jekyll Chapterbook](https://github.com/jasongrimes/jekyll-chapterbook)
+
+[Jekyll Chapterbook docs](https://jasongrimes.github.io/jekyll-chapterbook/index.html)
+
+[Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes)
+
+[Minimal Mistakes docs](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+
 I have a book series. it's easy to find themes for single books (all documentation themes work). it's absurdly hard to find themes that let you put up more than one book. and not all of themes have the right-pane kramdown TOC either, and those that do build a TOC then don't have the left-pane book nav, and those that have both don't have the prev/next page buttons, etc etc. and gitbooks is not free for custom domains. 
 
 we can do a separate AR site for each book on its own subdomain, plus a splash landing page, that's easy. but making all my books the same site is a hell of a lot of trouble. doing it via AR subsites isn't fucking clean when you have 30-odd chapters per book. and MM is going to be finicky and turn out less pretty than AR. 
