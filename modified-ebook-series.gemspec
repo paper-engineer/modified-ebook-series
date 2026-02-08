@@ -1,8 +1,8 @@
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-gitbook"
+  spec.name          = "modified-ebook-series"
   spec.version       = "0.0.6"
-  spec.authors       = ["Adam Rehn"]
-  spec.email         = ["adam@adamrehn.com"]
+  spec.authors       = ["Adam Rehn","Mog"]
+  spec.email         = ["adam@adamrehn.com",""]
   
   spec.summary       = "Gem-based Jekyll theme for documentation sites, inspired by GitBook's visual design language."
   spec.homepage      = "https://github.com/adamrehn/jekyll-theme-gitbook"
